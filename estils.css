@@ -25,9 +25,9 @@
     color: aquamarine;
 }
 :root {
-        --box-w: 100px;
-        --box-h: 100px;
-        --gap: 24px;
+        --box-w: 150px;
+        --box-h: 150px;
+        --gap: 25px;
       }
 .grid {
         display: flex;
@@ -39,7 +39,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 350px;
       }
 .box {
         background: #3498db;
@@ -64,7 +64,6 @@
     position:relative; 
     overflow:hidden; 
     border-radius:8px; 
-    box-shadow:0 6px 18px rgba(0,0,0,0.12)
 }
 .box.foto img{
     position:absolute; 
@@ -72,11 +71,32 @@
     width:100%; 
     height:100%; 
     object-fit:cover; 
-    transition:opacity 0.6s ease
+    transition:opacity 1.5s ease
 }
 .box.foto img.top{
     opacity:0
 }
 .box.foto:hover img.top{
     opacity:1
+}
+
+.linear:hover{
+    transform: translateY(120px); 
+    transition-timing-function: linear; 
+}
+.ease:hover{ 
+    transform: translateY(120px); 
+    transition-timing-function: ease; 
+}
+.ease-in:hover      { 
+    transform: translateY(120px); 
+    transition-timing-function: ease-in; 
+}
+.ease-out:hover{ 
+    transform: translateY(120px); 
+    transition-timing-function: ease-out; 
+}
+.ease-in-out:hover{ 
+    transform: translateY(120px); 
+    transition-timing-function: ease-in-out; 
 }
