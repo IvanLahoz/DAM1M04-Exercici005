@@ -24,6 +24,14 @@
 .menu a:hover {
     color: aquamarine;
 }
+.boton {
+  background-color: #8dffff;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
 :root {
         --box-w: 150px;
         --box-h: 150px;
