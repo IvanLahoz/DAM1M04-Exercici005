@@ -27,7 +27,7 @@
 :root {
         --box-w: 150px;
         --box-h: 150px;
-        --gap: 25px;
+        --gap: 30px;
       }
 .grid {
         display: flex;
