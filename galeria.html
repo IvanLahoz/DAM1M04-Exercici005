@@ -22,6 +22,34 @@
         font-weight: 400;
         font-style: normal;
     }
+    .bloc {
+        animation: prin 2s ease-in-out infinite;
+        background-color: #3498db;
+        border-radius: 20%;
+        height: 100px;
+        /* Assignem l'animació */
+        width: 150px;
+      }
+
+      /* ─── DEFINICIÓ DE L’ANIMACIÓ ─── */
+      @keyframes prin {
+        0% {
+          background-color: #3498db;
+          transform: scale(1);
+        }
+        33% {
+          background-color: #e74c3c;
+          transform: scale(1.5);
+        }
+        66% {
+            background-color: #51ff68;
+            transform: scale(1.25)
+        }
+        100% {
+          background-color: #3498db;
+          transform: scale(1.10);
+        }
+      }
 </style>
 <body>
     <div class="menu">
@@ -32,5 +60,6 @@
     <div class="titulo">
         <h1>Galeria</h1>
     </div>
+    <div class="bloc"></div>
 </body>
 </html>
